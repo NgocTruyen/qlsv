@@ -1,4 +1,12 @@
-    
+   <?php
+require 'libs/ketnoi.php';
+if(!empty($_POST['signin'])){
+    $val = "Hello word";
+    $user = "tuyen";
+    $pass = "123";
+}
+
+?>
 <html>
     <head>
         <title>Login</title>
@@ -10,13 +18,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-        
+    
     <body>
         <form action="action_page.php" method="post">
             <div class="imgcontainer">
                 <label><h2> Đăng nhập </h2></label>
             </div>
-                
+            
             <div class="container" style="background-color:#f1f1f1">
                 <table >
                     <tr>
@@ -30,12 +38,9 @@
                     <tr>
                     <label><p><input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu</label>
                     </tr>
+                        
                     <tr>
-                    <p><button type="submit" class="btn btn-danger">Đăng nhập</button>
-                        </tr>
-                            
-                    <tr>
-                    <p><button type="button" class="btn btn-danger">Cancel</button>
+                    <p><button type="button" class="btn btn-danger" name="signin">Đăng nhập</button>
                         </tr>
                     <tr>
                     <span class="psw1"> <a href="#">Đăng ký</a></span>
@@ -44,7 +49,7 @@
             </div>
         </table>
     </form>
-        
-        
+    
+    
 </body>
 </html>

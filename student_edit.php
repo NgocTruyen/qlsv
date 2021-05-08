@@ -46,12 +46,12 @@ disconnect_db();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Thêm sinh vien</title>
+        <title>Chỉnh sửa</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Thêm sinh vien </h1>
+        <h1>Chỉnh sửa </h1>
         <a href="student_list.php">Trở về</a> <br/> <br/>
         <form method="post" action="student_edit.php?id=<?php echo $data['sv_id']; ?>">
             <table width="50%" border="1" cellspacing="0" cellpadding="10">
